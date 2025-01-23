@@ -1,0 +1,94 @@
+/* General */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ffc1e3, #ffe5f0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* Contenedor del corazón */
+.heart-container h2 {
+    font-size: 1.5rem;
+    color: #d93b59;
+    margin-bottom: 20px;
+}
+
+/* Corazón grande en la pantalla inicial */
+.heart {
+    width: 150px;
+    cursor: pointer;
+    animation: heartbeat 1.5s infinite;
+    transition: transform 0.3s;
+}
+
+.heart:hover {
+    transform: scale(1.2);
+}
+
+/* Corazón pequeño en detalle.html */
+.imagen-pequeña {
+    width: 100px;
+    margin: 20px 0;
+}
+
+/* Animación de latido */
+@keyframes heartbeat {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+/* Botón para regresar */
+.boton {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #d93b59;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.boton:hover {
+    background-color: #b02045;
+}
+
+/* Animación de pasar páginas (libro) */
+.container.book-flip {
+    transform: rotateY(-180deg);
+    transition: transform 1s ease-in-out;
+}
+
+.container.flip-back {
+    transform: rotateY(0deg);
+    transition: transform 1s ease-in-out;
+}
+
+/* Botón de regresar */
+.boton-regresar {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #d93b59;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.boton-regresar:hover {
+    background-color: #b02045;
+}

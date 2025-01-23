@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Poema</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #ffc1e3, #ffe5f0);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+    
+    .container {
+      background-color: white;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    
+    h1 {
+      font-size: 2.5rem;
+      color: #d93b59;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 5px #ffc1e3; /* Contorno de texto con color #ffc1e3 */
+    }
+    
+    p {
+      font-size: 1.2rem;
+      color: #333;
+      margin-bottom: 15px;
+      text-shadow: 1px 1px 3px #ffc1e3;
+    }
+    
+    .imagen-pequeña {
+      width: 100px;
+      margin: 20px 0;
+    }
+    
+    .invitacion {
+      font-size: 1.5rem;
+      color: #d93b59;
+      margin-top: 20px;
+      text-shadow: 2px 2px 5px #ffc1e3;
+    }
+    
+    .boton {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      color: white;
+      background-color: #d93b59;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .boton-regresar {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      color: white;
+      background-color: #d93b59;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .container a {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      color: white;
+      background-color: #d93b59;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+    
+    .boton:hover {
+      background-color: #b02045;
+    }
+  </style>
+</head>
+<body class="detalle-page">
+  <div class="container">
+    <h1>Poema </h1>
+    <p>
+      [prueba]
+    </p>
+    <img src="corazon.png" alt="Corazón" class="imagen-pequeña">
+    <p class="invitacion">Te queria consultar algo [tengo miedo] ❤️ </p>
+    <a href="detalle.html" class="boton-regresar">Regresar</a>
+    <a href="valentin.html" class="boton">Siguiente</a>
+  </div>
+</body>
+</html>
