@@ -10,99 +10,78 @@
       margin: 0;
       padding: 0;
       font-family: 'Arial', sans-serif;
-      background: linear-gradient(135deg, #ffc1e3, #ffe5f0);
+      background: linear-gradient(135deg, #468189, #2e5863); /* Degradado de fondo */
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
       text-align: center;
+      color: #ffffff; /* Texto blanco */
+      backdrop-filter: blur(5px); /* Difuminado en el fondo */
     }
-    
+
     .container {
-      background-color: white;
+      background: rgba(119, 172, 162, 0.9); /* Fondo con transparencia */
       padding: 40px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5); /* Sombra para profundidad */
+      backdrop-filter: blur(10px); /* Difuminado en el contenedor */
     }
-    
+
     h1 {
       font-size: 2.5rem;
-      color: #d93b59;
+      color: #ffffff; /* Texto blanco */
       margin-bottom: 20px;
-      text-shadow: 2px 2px 5px #ffc1e3; /* Contorno de texto con color #ffc1e3 */
+      text-shadow: 2px 2px 5px #000; /* Sombra para destacar */
     }
-    
+
     p {
       font-size: 1.2rem;
-      color: #333;
+      color: #ffffff; /* Texto blanco */
       margin-bottom: 15px;
-      text-shadow: 1px 1px 3px #ffc1e3;
+      text-shadow: 1px 1px 3px #000; /* Sombra para destacar */
     }
-    
+
     .imagen-pequeña {
       width: 100px;
       margin: 20px 0;
     }
-    
+
     .invitacion {
       font-size: 1.5rem;
-      color: #d93b59;
+      color: #ffffff; /* Texto blanco */
       margin-top: 20px;
-      text-shadow: 2px 2px 5px #ffc1e3;
+      text-shadow: 2px 2px 5px #000;
     }
-    
-    .boton {
+
+    .boton, .boton-regresar {
       display: inline-block;
       margin-top: 15px;
       padding: 10px 20px;
       font-size: 1rem;
-      color: white;
-      background-color: #d93b59;
-      border: none;
-      border-radius: 5px;
-      text-decoration: none;
-      transition: background-color 0.3s ease;
-    }
-
-    .boton-regresar {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 10px 20px;
-      font-size: 1rem;
-      color: white;
-      background-color: #d93b59;
-      border: none;
-      border-radius: 5px;
-      text-decoration: none;
-      transition: background-color 0.3s ease;
-    }
-
-    .container a {
-      display: inline-block;
-      margin-top: 15px;
-      padding: 10px 20px;
-      font-size: 1rem;
-      color: white;
-      background-color: #d93b59;
+      color: #ffffff; /* Texto blanco */
+      background-color: rgba(183, 210, 134, 0.9); /* Color botón */
       border: none;
       border-radius: 5px;
       text-decoration: none;
       transition: background-color 0.3s ease, transform 0.3s ease;
+      box-shadow: 0 4px 10px rgba(183, 210, 134, 0.4); /* Sombra suave */
     }
-    
-    .boton:hover {
-      background-color: #b02045;
+
+    .boton:hover, .boton-regresar:hover {
+      background-color: rgba(183, 210, 134, 1); /* Más opaco al hover */
+      transform: scale(1.1); /* Agrandar al pasar el mouse */
     }
   </style>
 </head>
 <body class="detalle-page">
   <div class="container">
-    <h1>Poema </h1>
+    <h1>Poema</h1>
     <p>
       [prueba]
     </p>
     <img src="corazon.png" alt="Corazón" class="imagen-pequeña">
-    <p class="invitacion">Te queria consultar algo y ns si quiera  </p>
+    <p class="invitacion">Te quería consultar algo y no sé si quieras.</p>
     <a href="detalle.html" class="boton-regresar">Regresar</a>
     <a href="valentin.html" class="boton">Siguiente</a>
   </div>
