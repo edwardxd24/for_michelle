@@ -5,6 +5,60 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sorpresa</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #468189, #2e5863); /* Degradado de fondo */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      color: #ffffff; /* Texto blanco para buen contraste */
+      backdrop-filter: blur(5px); /* Difuminado en todo el fondo */
+    }
+
+    .heart-container {
+      background: rgba(119, 172, 162, 0.9); /* Fondo con transparencia */
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5); /* Sombra para profundidad */
+      backdrop-filter: blur(10px); /* Difuminado para el contenedor */
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: #ffffff; /* Texto blanco */
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 5px #000; /* Sombra para destacar */
+    }
+
+    .container {
+      display: inline-block;
+      padding: 20px;
+      background-color: rgba(119, 172, 162, 0.9); /* Color principal con transparencia */
+      border-radius: 50%;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 4px 10px rgba(119, 172, 162, 0.4); /* Sombra suave */
+      backdrop-filter: blur(10px); /* Difuminado en el contenedor del corazón */
+    }
+
+    .container:hover {
+      transform: scale(1.1); /* Efecto de agrandar al pasar el mouse */
+      box-shadow: 0 8px 20px rgba(119, 172, 162, 0.6); /* Más sombra al hacer hover */
+    }
+
+    .heart {
+      width: 100px;
+      height: 100px;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body class="main-page">
   <div class="heart-container">
@@ -15,3 +69,4 @@
   </div>
 </body>
 </html>
+
