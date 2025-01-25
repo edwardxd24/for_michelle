@@ -10,72 +10,42 @@
       margin: 0;
       padding: 0;
       font-family: 'Arial', sans-serif;
-      background: linear-gradient(135deg, #ffc1e3, #ffe5f0);
+      background: linear-gradient(135deg, #468189, #2e5863); /* Fondo degradado oscuro */
       display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
       text-align: center;
-      transition: background 0.5s ease-in-out;
+      color: #ffffff; /* Texto blanco */
+      overflow: hidden; /* Ocultar scroll */
+      backdrop-filter: blur(5px); /* Efecto de desenfoque */
     }
 
     .container {
-      background-color: white;
+      background: rgba(119, 172, 162, 0.9); /* Fondo con transparencia */
       padding: 40px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      transition: transform 0.5s ease-in-out;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5); /* Sombra más intensa */
+      animation: pop-in 0.7s ease;
     }
 
     h1 {
       font-size: 2.5rem;
-      color: #d93b59;
+      color: #ffffff; /* Texto blanco */
       margin-bottom: 20px;
-      text-shadow: 2px 2px 5px #ffc1e3;
+      text-shadow: 2px 2px 5px #000000; /* Sombra oscura */
     }
 
     p {
       font-size: 1.2rem;
-      color: #333;
-      margin-bottom: 15px;
-      text-shadow: 1px 1px 3px #ffc1e3;
-    }
-
-    .imagen-pequeña {
-      width: 100px;
-      margin: 20px 0;
-    }
-
-    .invitacion {
-      font-size: 1.5rem;
-      color: #d93b59;
-      margin-top: 20px;
-      text-shadow: 2px 2px 5px #ffc1e3;
-    }
-
-    .boton {
-      display: inline-block;
-      margin-top: 15px;
-      padding: 10px 20px;
-      font-size: 1rem;
-      color: white;
-      background-color: #d93b59;
-      border: none;
-      border-radius: 5px;
-      text-decoration: none;
-      transition: background-color 0.3s ease;
-    }
-
-    .boton:hover {
-      background-color: #b02045;
-    }
-
-    .animated-text {
-      animation: fadeIn 2s ease-in-out;
+      color: #ffffff; /* Texto blanco */
+      margin-bottom: 20px;
+      text-shadow: 1px 1px 3px #000000; /* Sombra oscura */
     }
 
     .imagen-pequeña {
       width: 150px;
+      margin: 20px 0;
       cursor: pointer;
       animation: heartbeat 1.5s infinite;
       transition: transform 0.3s;
@@ -83,6 +53,32 @@
 
     .imagen-pequeña:hover {
       transform: scale(1.2);
+    }
+
+    .invitacion {
+      font-size: 1.5rem;
+      color: #ffffff; /* Texto blanco */
+      margin-top: 20px;
+      text-shadow: 2px 2px 5px #000000; /* Sombra oscura */
+    }
+
+    .boton-regresar {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      color: #ffffff; /* Texto blanco */
+      background-color: rgba(183, 210, 134, 0.9); /* Color botón */
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      box-shadow: 0 4px 10px rgba(183, 210, 134, 0.4); /* Sombra suave */
+    }
+
+    .boton-regresar:hover {
+      background-color: rgba(183, 210, 134, 1); /* Más opaco al hover */
+      transform: scale(1.1); /* Agrandar al pasar el mouse */
     }
 
     @keyframes heartbeat {
@@ -94,51 +90,28 @@
       }
     }
 
-    .boton-regresar {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 10px 20px;
-      font-size: 1rem;
-      color: white;
-      background-color: #d93b59;
-      border: none;
-      border-radius: 5px;
-      text-decoration: none;
-      transition: background-color 0.3s ease;
-    }
-
-    .boton-regresar:hover {
-      background-color: #b02045;
-    }
-
-    .container a {
-      display: inline-block;
-      margin-top: 15px;
-      padding: 10px 20px;
-      font-size: 1rem;
-      color: white;
-      background-color: #d93b59;
-      border: none;
-      border-radius: 5px;
-      text-decoration: none;
-      transition: background-color 0.3s ease, transform 0.3s ease;
-    }
-
-    .container a:hover {
-      background-color: #b02045;
-      transform: scale(1.05);
+    @keyframes pop-in {
+      from {
+        transform: scale(0.8);
+        opacity: 0;
+      }
+      to {
+        transform: scale(1);
+        opacity: 1;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="container animated-container">
-    <h1 class="animated-text">¿Quieres ser mi San Valentín? 💖</h1>
-    <p class="animated-text">
+  <div class="container">
+    <h1>¿Quieres ser mi San Valentín? 💖</h1>
+    <p>
       Esta página está hecha con mucho cariño, para que sepas cuánto significas para mí. ❤️
     </p>
     <img src="corazon.png" alt="Corazón" class="imagen-pequeña">
-    <p class="invitacion animated-text">Espero que esta pequeña sorpresa te guste mucho. 🌹</p>
-    <a href="detalle.html" class="boton-regresar">Regresar</a>
+    <p class="invitacion">Espero que esta pequeña sorpresa te guste mucho. 🌹</p>
+    <a href="poema.html" class="boton-regresar">Regresar</a>
   </div>
 </body>
 </html>
+
